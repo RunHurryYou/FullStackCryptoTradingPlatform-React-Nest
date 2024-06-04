@@ -6,6 +6,7 @@ import Career from "./pages/Career";
 import Market from './pages/Market';
 import Trade from './pages/Trade';
 import Earn from './pages/Earn';
+import Login from './pages/Login';
 import './styles/App.css'
 
 const App: React.FC = () => {
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route path="/earn" Component={Earn} />
         <Route path="/about" Component={About} />
         <Route path="/career" Component={Career} />
+        <Route path="/login" Component={Login} />
       </Routes>
     </BrowserRouter>
   );

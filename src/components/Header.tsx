@@ -37,7 +37,7 @@ const Header: React.FC = () => {
             <a className="logout" onClick={toggleLogin}>Log Out</a>
             ) : (
             <>  
-                <a className="login" onClick={toggleLogin}>Log In</a>
+                <Link to="/login" className='login' onClick={toggleLogin}>Log In</Link>
                 <a className="sign" onClick={toggleLogin}>Sign Up</a>
             </>
             )}

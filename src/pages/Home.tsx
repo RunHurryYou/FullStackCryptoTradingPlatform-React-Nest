@@ -19,6 +19,7 @@ const Home: React.FC = () => {
     <>
     <Header></Header>
     <main>
+      <div className='home-main'>
       <div className="home-header">
       <div className="home-header-text">
         <div className='home-header-title'>
@@ -260,6 +261,7 @@ const Home: React.FC = () => {
             
           </div>
         </div>
+      </div>
       </div>
     </main>
     <Footer></Footer>
