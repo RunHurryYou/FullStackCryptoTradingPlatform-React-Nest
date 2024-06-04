@@ -7,7 +7,6 @@ import Market from './pages/Market';
 import Trade from './pages/Trade';
 import Earn from './pages/Earn';
 import Login from './pages/Login';
-import './styles/App.css'
 
 const App: React.FC = () => {
   return (

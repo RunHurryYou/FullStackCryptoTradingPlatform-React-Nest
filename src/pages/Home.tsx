@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/Home.css';
+import styles from '../styles/App.module.css'
 import arrow from '../img/button-home-arrow.svg';
 import note from '../img/note.png';
 import chooseimg from '../img/choose-us-img.png';
@@ -54,7 +55,7 @@ const Home: React.FC = () => {
             <div className="market-trends-filter">Metaverse</div>
           </div>
           </div>
-          <div className="footer-line"></div>
+          <div className={styles.footer_line}></div>
           <div className="market-trends-cards">
             <MarketTrendCard valute="bitcoin" currency="usd" name="Bitcoin"></MarketTrendCard>
             <MarketTrendCard valute="bitshares" currency="usd" name="BTS"></MarketTrendCard>
@@ -76,7 +77,7 @@ const Home: React.FC = () => {
           <h2 className="simple-steps-describe">
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </h2>
-          <div className="footer-line"></div>
+          <div className={styles.footer_line}></div>
           <div className='simple-step-cards'>
             <SimpleStep title='Create Account' describe='Lorem Ipsum is simply dummy text of the printing and typesetting industry.' btn='Sign Up Now'></SimpleStep> 
             <SimpleStep title='Verify Bank Account' describe='Lorem Ipsum is simply dummy text of the printing and typesetting industry.' btn='Verify Now'></SimpleStep> 
@@ -93,7 +94,7 @@ const Home: React.FC = () => {
           <div className="choose-us-describe">
           When an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </div>
-          <div className="footer-line"></div>
+          <div className={styles.footer_line}></div>
           <div className="choose-us-content">
             <div className="choose-us-cards">
                 <div className="choose-us-card">
@@ -113,7 +114,7 @@ const Home: React.FC = () => {
                     <img src={arrow} alt="" />
                   </a>
                 </div>
-                <div className="footer-line"></div>
+                <div className={styles.footer_line}></div>
                 <div className="choose-us-card">
                   <p className="choose-us-card-number">
                     02
@@ -149,7 +150,7 @@ const Home: React.FC = () => {
                     <img src={arrow} alt="" />
                   </a>
                 </div>
-                <div className="footer-line"></div>
+                <div className={styles.footer_line}></div>
                 <div className="choose-us-card">
                   <p className="choose-us-card-number">
                     04
@@ -182,7 +183,7 @@ const Home: React.FC = () => {
               Lorem Ipsum has been the industry's standard dummy text since the 1500s, when an unknown printer took a galley of type and scrambled type specimen book.
             </div>
           </div>
-          <div className="footer-line"></div>
+          <div className={styles.footer_line}></div>
           <div className='tesimonials-slider'>
             <SimpleSlider></SimpleSlider>
           </div>
@@ -220,7 +221,7 @@ const Home: React.FC = () => {
           <div className="asked-questions-describe">
             When an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </div>
-          <div className="footer-line"></div>
+          <div className={styles.footer_line}></div>
           <div className="questions">
             <div className='first-question-container'>
               <QuestionHome 

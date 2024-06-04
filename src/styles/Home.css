@@ -3,15 +3,6 @@
     src: url("../../public/SourceSansPro.ttf");
 }
 
-body{
-    background-color: #1E1F25;
-}
-
-main{
-    width: 100%;
-    background-color: #1E1F25;
-}
-
 .home-header{
     display: flex;
     padding: 10% 10%;

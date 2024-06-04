@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Login.css'
+import styles from '../styles/Login.module.css'
 import hide from '../img/eye-password-hide.svg'
 import show from '../img/eye-password-show.svg'
 import page from '../img/login-page-img.png'
@@ -13,36 +13,37 @@ const Login: React.FC = () => {
 
   return (
     <>
-      <main>
-      <div className='login-page-main'>
-      <div className="login-block">
-        <form className='login-form'>
+      <main className={styles.login_main}>
+      <div className={styles.login_page_main}>
+      <div className={styles.login_block}>
+        <form className={styles.login_form}>
           <h1>Login</h1>
-          <div className="form-group">
+          <div className={styles.form_group}>
             <p>Email or Phone</p>
-            <input className="form-control1 item" type="text" name="username" pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Type Here" required/>
+            <input className={styles.form_control1} type="text" name="username" pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Type Here" required/>
           </div>
-          <div className="form-group">
+          <div className={styles.form_group}>
             <p>Password</p>
-            <input className="form-control item" type={showPassword ? "text" : "password"} name="Пароль" id="password" placeholder="Type Here" required/>
-            <img src={showPassword ? hide : show} alt="toggle password visibility" onClick={togglePasswordVisibility} className="password-toggle" />
+            <input className={styles.form_control} type={showPassword ? "text" : "password"} name="Пароль" id="password" placeholder="Type Here" required/>
+            <img src={showPassword ? hide : show} alt="toggle password visibility" onClick={togglePasswordVisibility} className={styles.password_toggle} />
           </div>
-          <div className="form-group">
-            <button className="create-account" type="submit">Login</button>
+          <div className={styles.form_group}>
+            <button className={styles.create_account} type="submit">Login</button>
           </div>
         </form>
-        <p className='forgot-password'>Forgot Password?</p>
-        <div className='login-page-signup-block'>
-          <p className='login-dont-have'>Don't have an Account?</p>
-          <p className='login-signup-link'>Sign Up Here</p>
+        <p className={styles.forgot_password}>Forgot Password?</p>
+        <div className={styles.login_page_signup_block}>
+          <p className={styles.login_dont_have}>Don't have an Account?</p>
+          <p className={styles.login_signup_link}>Sign Up Here</p>
         </div>
       </div>
-      <img src={page} alt="page" className='page-img'/>
+      <img src={page} alt="page" className={styles.page_img}/>
+    </div>
+    <div className={styles.login_footer}>
+    <p>©Copyright 2022 All Rights Are Reserved.</p>
     </div>
   </main>
-  <footer>
-    <p>©Copyright 2022 All Rights Are Reserved.</p>
-  </footer>
+  
 </>
 );
 };

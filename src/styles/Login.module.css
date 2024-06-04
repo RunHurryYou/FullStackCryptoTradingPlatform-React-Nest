@@ -1,26 +1,31 @@
-.login-page-main{
+.login_main{
+    height: 100vh;
+    background-color: #141517;
+}
+
+.login_page_main{
     display: flex;
     justify-content: space-between;
 }
 
-.login-block{
+.login_block{
     margin-top:3%;
     margin-left: 5%;
     width: 30%;
 }
 
-.login-form{
+.login_form{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form-group{
+.form_group{
     width: 100%;
     margin-top: 4%;
 }
 
-.login-form h1{
+.login_form h1{
     margin-left: 9%;
     font-family: Source Sans Pro;
     font-size: 36px;
@@ -29,7 +34,7 @@
     color:white;
 }
 
-.form-group p {
+.form_group p {
     font-family: Source Sans Pro;
     font-size: 16px;
     font-weight: 600;
@@ -38,7 +43,7 @@
     color:#CFD3DA;
 }
 
-.form-control{
+.form_control{
     position: relative;
     z-index: 1;
     width: 100%;
@@ -57,7 +62,7 @@
     text-align: left;
 }
 
-.form-control1{
+.form_control1{
     position: relative;
     z-index: 1;
     width: 109%;
@@ -76,7 +81,7 @@
     text-align: left;
 }
 
-.create-account{
+.create_account{
     margin-top: 4%;
     width: 112%;
     height: 56px;
@@ -92,7 +97,7 @@
     text-align: center;
 }
 
-.password-toggle{
+.password_toggle{
     position: absolute;
     width: 27px;
     height: auto;
@@ -101,7 +106,7 @@
     z-index: 10;
 }
 
-.login-block .forgot-password{
+.login_block .forgot_password{
     font-family: Source Sans Pro;
     font-size: 16px;
     font-weight: 600;
@@ -112,7 +117,7 @@
     margin-left: 11%;
 }
 
-.login-page-signup-block{
+.login_page_signup_block{
     margin-left: 5%;
     display: flex;
     justify-content: center;
@@ -125,21 +130,21 @@
     text-align: left;
 }
 
-.login-page-signup-block p:first-child{
+.login_page_signup_block p:first-child{
     color:gray;
 }
 
-.login-page-signup-block p:last-child{
+.login_page_signup_block p:last-child{
     color:white;
 }
 
-.page-img{
+.page_img{
     width:650px;
     height: auto;
     margin-right: 5%;
 }
 
-footer p{
+.login_footer p{
     font-family: Source Sans Pro;
     font-size: 16px;
     font-weight: 400;

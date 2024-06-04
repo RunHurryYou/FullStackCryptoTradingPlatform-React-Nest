@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../img/logo.svg';
 import { Link } from 'react-router-dom';
+import styles from '../styles/App.module.css'
 
 const Header: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -10,35 +11,35 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className='app-header'>
-        <div className='logolink'>
-            <Link to="/"><img src={logo} alt="" className="headimg" /></Link>
-            <div className="create-line"></div>
+    <header className={styles.app_header}>
+        <div className={styles.logolink}>
+            <Link to="/"><img src={logo} alt="" className={styles.headimg} /></Link>
+            <div className={styles.create_line}></div>
         </div>
-        <div className="navbar">
-            <div className='link'>
+        <div className={styles.navbar}>
+            <div className={styles.link}>
             <Link to="/market">Market</Link>
             </div>
-            <div className='link'>
+            <div className={styles.link}>
                 <Link to="/trade">Trade</Link>
             </div>
-            <div className='link'>
+            <div className={styles.link}>
                 <Link to="/earn">Earn</Link>
             </div>
-            <div className='link'>
+            <div className={styles.link}>
                 <Link to="/about">About</Link>
             </div>
-            <div className='link'>
+            <div className={styles.link}>
                 <Link to="/career">Career</Link>
             </div>
         </div>
-        <div className='reg'>
+        <div className={styles.reg}>
             {isLoggedIn ? (
-            <a className="logout" onClick={toggleLogin}>Log Out</a>
+            <a className={styles.logout} onClick={toggleLogin}>Log Out</a>
             ) : (
             <>  
-                <Link to="/login" className='login' onClick={toggleLogin}>Log In</Link>
-                <a className="sign" onClick={toggleLogin}>Sign Up</a>
+                <Link to="/login" className={styles.login} onClick={toggleLogin}>Log In</Link>
+                <a className={styles.sign} onClick={toggleLogin}>Sign Up</a>
             </>
             )}
         </div>   

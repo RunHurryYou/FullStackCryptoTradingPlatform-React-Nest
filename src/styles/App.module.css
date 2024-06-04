@@ -3,12 +3,13 @@
   src: url("../../public/SourceSansPro.ttf");
 }
 
-.app-header{
+.app_header{
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+  background-color: #1E1F25;
 }
 
 .logolink{
@@ -17,7 +18,7 @@
   gap:40px;
 }
 
-.create-line {
+.create_line {
   margin-top: 10px;
   height: 30px;
   border-left: 1px solid grey;
@@ -73,14 +74,18 @@
 
 }
 
-.app-footer{
+.footer{
+  background-color: #1E1F25;
+}
+
+.app_footer{
   padding: 5% 0;
   width: 80%;
   margin: auto;
   background-color: #1E1F25;
 }
 
-.footer-community{
+.footer_community{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,7 +105,7 @@
 
 }
 
-.footer-line{
+.footer_line{
   width: 100%;
   border: 1px solid;
   border-image-source: linear-gradient(
@@ -112,17 +117,17 @@
   border-image-slice: 1;
 }
 
-.footer-cards-links{
+.footer_cards_links{
   display: flex;
   justify-content: space-between;
   margin: 60px 0;
 }
 
-.footer-card div{
+.footer_card div{
   cursor: pointer;
 }
 
-.footer-card-title{
+.footer_card_title{
   font-family: Source Sans Pro;
   font-size: 18px;
   line-height: 28px;
@@ -131,7 +136,7 @@
 
 }
 
-.footer-link{
+.footer_link{
   margin-top: 2em;
   font-family: Source Sans Pro;
   font-size: 16px;
@@ -140,12 +145,12 @@
   color: #ADB3BF;
 }
 
-.footer-bott{
+.footer_bott{
   margin-top: 40px;
   display: flex;
   align-items: center;
 }
-.bottom-text{
+.bottom_text{
   display: flex;
   align-items: center;
   font-family: Source Sans Pro;
