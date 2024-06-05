@@ -7,6 +7,8 @@ import Market from './pages/Market';
 import Trade from './pages/Trade';
 import Earn from './pages/Earn';
 import Login from './pages/Login';
+import SignUp from './pages/SignUp/SignUp';
+import ForgivePassword from './pages/ForgivePassword/ForgivePassword';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +21,8 @@ const App: React.FC = () => {
         <Route path="/about" Component={About} />
         <Route path="/career" Component={Career} />
         <Route path="/login" Component={Login} />
+        <Route path='/signup' Component={SignUp}/>
+        <Route path='/forgive_password' Component={ForgivePassword}/>
       </Routes>
     </BrowserRouter>
   );

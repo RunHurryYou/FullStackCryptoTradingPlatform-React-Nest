@@ -39,7 +39,7 @@ const Header: React.FC = () => {
             ) : (
             <>  
                 <Link to="/login" className={styles.login} onClick={toggleLogin}>Log In</Link>
-                <a className={styles.sign} onClick={toggleLogin}>Sign Up</a>
+                <Link to="/signup" className={styles.sign} onClick={toggleLogin}>Sign Up</Link>
             </>
             )}
         </div>   
