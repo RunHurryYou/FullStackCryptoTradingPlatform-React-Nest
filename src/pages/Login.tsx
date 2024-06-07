@@ -21,7 +21,7 @@ const Login: React.FC = () => {
           <h1>Login</h1>
           <div className={styles.form_group}>
             <p>Email or Phone</p>
-            <input className={styles.form_control1} type="text" name="username" pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Type Here" required/>
+            <input className={styles.form_control1} type="text" name="username" id="username" placeholder="Type Here" required/>
           </div>
           <div className={styles.form_group}>
             <p>Password</p>
