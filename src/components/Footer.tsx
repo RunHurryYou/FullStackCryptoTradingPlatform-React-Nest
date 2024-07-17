@@ -7,6 +7,7 @@ import linked from '../img/linked.svg'
 import youtube from '../img/youtube.svg'
 import dot from '../img/dot.svg'
 import styles from '../styles/App.module.css'
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
 
@@ -65,7 +66,7 @@ const Footer: React.FC = () => {
             </div>
             <div className={styles.footer_card}>
                 <div className={styles.footer_card_title}>Press</div>
-                <div className={styles.footer_link}>Blog</div>
+                <Link to="/blog" className={styles.footer_link}>Blog</Link>
                 <div className={styles.footer_link}>News</div>
                 <div className={styles.footer_link}>Events</div>
             </div>

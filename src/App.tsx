@@ -10,6 +10,7 @@ import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import ForgivePassword from './pages/ForgivePassword';
 import NewPassword from './pages/NewPassword';
+import Blog from './pages/Blog';
 
 const App: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const App: React.FC = () => {
         <Route path='/signup' Component={SignUp}/>
         <Route path='/forgive_password' Component={ForgivePassword}/>
         <Route path='/new_password' Component={NewPassword}/>
+        <Route path='/blog' Component={Blog}/>
       </Routes>
     </BrowserRouter>
   );
